@@ -1,0 +1,1239 @@
+.font16{
+    font-size: 16px!important;
+}
+.font18{
+    font-size: 18px!important;
+}
+.font20{
+    font-size: 20px;
+}
+.font22{
+    font-size: 22px!important;
+}
+.font24{
+    font-size: 24px!important;
+}
+.font30{
+    font-size: 30px!important;
+}
+.font35{
+    font-size: 35px!important;
+}
+
+.font40{
+    font-size: 40px!important;
+}
+.font45{
+    font-size: 45px!important;
+}
+.font50{
+    font-size: 50px!important;
+}
+.font60{
+    font-size: 60px!important;
+}
+
+.font70{
+    font-size: 70px!important;
+}
+
+.font100{
+    font-size: 100px!important;
+}
+
+.font200{
+    font-weight: 200!important;
+}
+.font300{
+    font-weight: 300!important;
+}
+.font400{
+    font-weight: 400!important;
+}
+
+.font600{
+    font-weight: 600!important;
+}
+.font700{
+    font-weight: 700!important;
+}
+
+.font-5rem{
+    font-size: 5rem;
+}
+
+.clr-white{
+    color: #fff!important;
+}
+.clr-black{
+    color: #000 !important;
+}
+
+.pr-2rem{
+    padding-right: 2rem!important;
+}
+
+/* Line Indicator */
+.line-indicator {
+    position: absolute;
+    bottom: 10%; /* Adjusted placement */
+    left: 45%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center; /* Centers the lines */
+    align-items: center;
+    gap: 8px; /* Adjusted gap between the lines */
+    z-index: 3;
+    transform: skew(-46deg) translateX(0%);
+}
+
+.yellow-line,
+.blue-line {
+    height: 6px;
+    width: 50px; /* Default width for desktop */
+    border-radius: 2px; /* Smooth edges for the lines */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.yellow-line {
+    background-color: #FFBC00;
+}
+
+.blue-line {
+    background-color: blue;
+}
+
+/* Header Styling */
+header .navbar {
+    background-color: transparent !important;
+    z-index: 1000;
+    padding: 10px 20px;
+    position: absolute;
+}
+
+header .navbar .logo {
+    width: 150px;
+    height: 120px;
+    padding-top: 20px;
+    padding-left: -25px;
+}
+
+.navbar-nav {
+    gap: 20px;
+    flex-direction: row;
+}
+
+.header .nav-item {
+    margin: 0 10px;
+  }
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 1rem;
+}
+
+.contact-btn {
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-color: #ffbc00;
+    color: #000;
+}
+
+/* Carousel */
+
+.carousel-inner img {
+    height: 90vh;
+    object-fit: cover;
+    position: relative;
+    z-index: 1; /* Ensures the image is below the overlay */
+}
+
+/* Black Overlay */
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Black with 50% opacity */
+    z-index: 2; /* Ensures the overlay is above the image */
+}
+
+/* Carousel Caption */
+.carousel-caption {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.carousel-caption .title-slide {
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-style: italic;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.carousel-caption .subtitle-slide {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 5px;
+    white-space: nowrap;
+}
+
+/* Subtitle Slide Animation */
+.subtitle-slide {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 5px;
+    white-space: nowrap;
+    opacity: 0; /* Start hidden */
+    transform: translateX(100%); /* Start off-screen to the right */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Smooth animation */
+}
+
+/* Add the active class for sliding in */
+.subtitle-slide.active {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* Reset to its normal position */
+}
+
+/* Carousel Controls */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    z-index: 10; /* Ensure arrows are above all content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+    font-family: 'Font Awesome 5 Free'; /* Use Font Awesome */
+}
+
+.carousel-control-prev-icon::after {
+    content: "\f104"; /* Font Awesome left chevron */
+}
+
+.carousel-control-next-icon::after {
+    content: "\f105"; /* Font Awesome right chevron */
+}
+
+/* Hover Effects */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background on hover */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Ensure parent container doesn't cut off the controls */
+.carousel {
+    position: relative;
+    overflow: visible; /* Allow controls to be visible */
+}
+
+@media (max-width: 1024px) {
+    /* Adjusting the carousel image height for 1024px screens */
+    
+    header .navbar .logo {
+        width: 100px; /* Smaller logo for 1024px */
+        height: 90px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.85rem; /* Smaller font for nav links */
+    }
+
+    .contact-btn {
+        padding: 3px 8px; /* Further reduce padding */
+        font-size: 11px; /* Reduce font size for 1024px */
+    }
+    
+    .carousel-inner img {
+        height: 75vh; /* Reduce height for smaller screens */
+    }
+
+    /* Update carousel caption */
+    .carousel-caption {
+        top: 60%; /* Adjust vertical position */
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .carousel-caption .title-slide {
+        font-size: 2.5rem; /* Reduce title font size */
+    }
+
+    .carousel-caption .subtitle-slide {
+        font-size: 1.8rem; /* Reduce subtitle font size */
+    }
+
+    /* Update carousel control buttons */
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 30px;
+        height: 30px;
+    }
+
+    .carousel-control-prev-icon::after,
+    .carousel-control-next-icon::after {
+        font-size: 1.2rem; /* Reduce icon size */
+    }
+
+    .line-indicator {
+        bottom: 12%; /* Adjust line position */
+        gap: 5px; /* Reduce gap between lines */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjusting the carousel image height for 768px screens */
+    
+    header .navbar .logo {
+        width: 60px; /* Further reduced logo size for 768px */
+        height: 60px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.8rem; /* Smaller font size */
+    }
+
+    .contact-btn {
+        padding: 2px 6px; /* Smaller button padding */
+        font-size: 10px; /* Smaller font size for button */
+    }
+    
+    .carousel-inner img {
+        height: 60vh; /* Further reduce height for smaller screens */
+    }
+
+    /* Update carousel caption */
+    .carousel-caption {
+        top: 50%; /* Adjust vertical position for better alignment */
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .carousel-caption .title-slide {
+        font-size: 1.5rem; /* Smaller font size for the title */
+    }
+
+    .carousel-caption .subtitle-slide {
+        font-size: 1rem; /* Smaller font size for the subtitle */
+    }
+
+    /* Update carousel control buttons */
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 25px;
+        height: 25px; /* Reduce button size */
+    }
+
+    .carousel-control-prev-icon::after,
+    .carousel-control-next-icon::after {
+        font-size: 1rem; /* Smaller arrow icons */
+    }
+
+    .line-indicator {
+        bottom: 15%; /* Adjust position further */
+        gap: 4px; /* Narrow gap */
+    }
+}
+
+/* Section 1: Responsive Design */
+
+/* section 1 ends */
+
+/* Section 2: About Section */
+.about-section {
+    padding: 60px 0;
+    background-color: #ffffff; /* Background color for the section */
+    height: 100vh;
+}
+
+.about-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0056b3; /* Blue color for the text */
+    text-transform: uppercase;
+    position: relative;
+}
+
+.heading-underline {
+    width: 60px;
+    height: 4px;
+    background-color: #f9c300; /* Yellow color for the line */
+    margin: 10px auto 0; /* Center the line */
+}
+
+.about-text {
+    font-size: 1.2rem;
+    color: #0056b3; /* Blue color for the text */
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 0px;
+}
+
+.lottie-animation {
+    max-width: 100%;
+    max-height: 400px; /* Adjust size for Lottie animation */
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .about-text{
+     font-size: 1rem;   
+    }
+}
+
+@media (max-width: 768px) {
+    .about-text{
+     font-size: 0.8rem;   
+    }
+}
+
+/* Section 2: Responsive Design */
+
+/* section 2 ends */
+
+/* Section 3: What We Do */
+.what-we-do-section {
+    padding: 60px 0;
+    background-color: #f8f9fa; /* Light gray background */
+    height:80vh;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0056b3; /* Blue color for the title */
+    text-transform: uppercase;
+    position: relative;
+}
+
+.section-underline {
+    width: 60px;
+    height: 4px;
+    background-color: #f9c300; /* Yellow underline */
+    margin: 10px auto 0; /* Center the line */
+}
+
+/* Service Cards */
+.service-card {
+    background-color: #ffffff;
+    border-radius: 15px; /* Rounded edges */
+    padding: 20px;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Service Icons */
+.service-icon {
+    max-width: 100px; /* Larger icons */
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+/* Service Title */
+.service-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0056b3; /* Blue color for text */
+    text-decoration: underline; /* Underline for hyperlink */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+    margin-top: 10px; /* Add spacing above the title */
+}
+
+.service-title:hover {
+    color: #f9c300; /* Yellow on hover */
+}
+
+/* View Our Services Button */
+.view-services-btn {
+    background-color: #0056b3; /* Blue button */
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 25px; /* Fully rounded corners */
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Hover effects */
+    margin-top: 10px;
+}
+
+.view-services-btn:hover {
+    background-color: #f9c300; /* Yellow on hover */
+    color: #0056b3; /* Blue text on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+
+/* Responsive Design for Section 3 */
+
+/* Responsive Layout for 1024px */
+@media (max-width: 1024px) {
+    .what-we-do-section {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 2rem; /* Slightly smaller title */
+    }
+
+    .service-card {
+        padding: 15px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Lighter shadow for smaller devices */
+    }
+
+    .service-icon {
+        max-width: 80px; /* Smaller icons */
+        height: 80px;
+    }
+
+    .service-title {
+        font-size: 1.3rem; /* Adjust title font size */
+    }
+
+    .view-services-btn {
+        padding: 8px 25px;
+        font-size: 1rem; /* Reduce button size */
+    }
+
+    .container {
+        width: 90%; /* Slightly reduced container width */
+    }
+}
+
+/* section 3 ends */
+
+/* Section 4: Why Choose Us */
+.why-choose-us-section {
+    padding: 60px 0;
+    background-color: #ffffff; /* White background */
+    height: 90vh;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0056b3; /* Blue text color */
+    text-transform: uppercase;
+    position: relative;
+}
+
+.section-underline {
+    width: 60px;
+    height: 4px;
+    background-color: #f9c300; /* Yellow underline */
+    margin: 10px auto 0;
+}
+
+/* List with Checkboxes */
+.why-choose-us-list {
+    list-style: none;
+    padding: 0;
+}
+
+.why-choose-us-list li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0056b3; /* Blue text color */
+    display: flex;
+    align-items: center;
+}
+
+.check-icon {
+    width: 40px; /* Adjust the width to fit text size */
+    height: 40px; /* Keep the aspect ratio consistent */
+    margin-right: 10px; /* Add space between the image and text */
+    margin-bottom: 15px;
+}
+
+/* Lottie Animation */
+.lottie-container {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+/* Section 4: Why Choose Us */
+@media screen and (max-width: 1024px) {
+    .why-choose-us-section {
+        padding: 50px 0;
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .section-title {
+        font-size: 2rem; /* Adjust title size */
+    }
+
+    .section-underline {
+        width: 50px; /* Reduce underline width */
+        height: 3px; /* Reduce underline height */
+    }
+
+    .why-choose-us-list li {
+        font-size: 1rem; /* Adjust text size */
+    }
+
+    .check-icon {
+        width: 30px; /* Scale down the checkbox */
+        height: 30px; /* Keep aspect ratio */
+        margin-right: 8px; /* Reduce spacing */
+        margin-bottom: 10px; /* Adjust bottom margin */
+    }
+
+    .lottie-container {
+        max-width: 90%; /* Limit width for better spacing */
+        margin: 0 auto; /* Center the animation */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .why-choose-us-section {
+        padding: 40px 0;
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .section-title {
+        font-size: 1.8rem; /* Further reduce title size */
+    }
+
+    .section-underline {
+        width: 40px; /* Narrower underline */
+        height: 3px; /* Smaller underline height */
+    }
+
+    .why-choose-us-list {
+        text-align: left; /* Align text to the left */
+        padding-left: 20px; /* Add some padding */
+    }
+
+    .why-choose-us-list li {
+        font-size: 0.9rem; /* Reduce text size */
+    }
+
+    .check-icon {
+        width: 25px; /* Smaller checkboxes */
+        height: 25px;
+        margin-right: 5px; /* Reduce spacing */
+        margin-bottom: 8px; /* Adjust bottom margin */
+    }
+
+    .lottie-container {
+        max-width: 80%; /* Further limit width */
+        margin: 0 auto; /* Center the animation */
+    }
+}
+
+.quote-bg-section {
+    position: relative;
+    background-image: url('../images/homepage/Efficiency_in_motion.jpg');
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image */
+    height: 200px; /* Adjust height as needed */
+    z-index: 0;
+}
+
+.quote-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 17, 0.9); /* Semi-transparent dark overlay */
+    z-index: 1; /* Ensures the overlay is above the image */
+}
+
+.quote-content {
+    position: relative;
+    z-index: 2; /* Ensures content is above both the image and overlay */
+    text-align: center;
+    color: white;
+    top: 50%; /* Centers content vertically */
+    transform: translateY(-50%);
+}
+
+  #tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .get-quote{
+    color: #0068d2 !important;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .get-quote{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .get-quote{
+        font-size: 15px;
+    }
+}
+
+  /* Section 6: Testimonials */
+.testimonials-section {
+    padding: 60px 0;
+    background-color: #f8f9fa; /* Light gray background */
+    height: 90vh;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0056b3; /* Blue color */
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.section-underline {
+    width: 60px;
+    height: 4px;
+    background-color: #f9c300; /* Yellow line */
+    margin: 10px auto 0;
+}
+
+/* Testimonials Carousel */
+.testimonial-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Testimonial Image */
+.testimonial-image {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-bottom: 20px;
+    border: 3px solid #f9c300; /* Yellow border around the image */
+    overflow:hidden;
+}
+
+/* Testimonial Name */
+.testimonial-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 5px;
+}
+
+/* Testimonial Position */
+.testimonial-position {
+    font-size: 1rem;
+    font-style: italic;
+    color: #6c757d; /* Muted gray color */
+    margin-bottom: 15px;
+}
+
+/* Testimonial Text */
+.testimonial-text {
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.5;
+    color: #333333; /* Darker text color */
+}
+
+.testimonial-carousel-inner img {
+    height: 15vh;
+    width: 15vh;
+    object-fit: cover;
+}
+
+/* Carousel Controls */
+.testimonial-carousel-control-prev,
+.testimonial-carousel-control-next {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    z-index: 10; /* Ensure arrows are above all content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin-top: 170px;
+}
+
+/* Position arrows closer to the testimonial card */
+.testimonial-carousel-control-prev {
+    left: 15px; /* Adjust distance from the left edge */
+}
+
+.testimonial-carousel-control-next {
+    right: 15px; /* Adjust distance from the right edge */
+}
+
+/* Font Awesome Icons for Arrows */
+.testimonial-carousel-control-prev-icon::after,
+.testimonial-carousel-control-next-icon::after {
+    font-family: 'Font Awesome 5 Free'; /* Use Font Awesome */
+    font-weight: 900;
+    font-size: 1.5rem; /* Adjust icon size */
+    color: #ffffff; /* White arrow color */
+}
+
+.testimonial-carousel-control-prev-icon::after {
+    content: "\f104"; /* Font Awesome left chevron */
+}
+
+.testimonial-carousel-control-next-icon::after {
+    content: "\f105"; /* Font Awesome right chevron */
+}
+
+/* Hover Effects */
+.testimonial-carousel-control-prev:hover,
+.testimonial-carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background on hover */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Responsive Layout for 1024px */
+@media (max-width: 1024px) {
+    .testimonials-section {
+        padding: 40px 0;
+        height: auto;
+        height: 90vh;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+        max-width: 500px;
+    }
+
+    .testimonial-name {
+        font-size: 1.3rem;
+    }
+
+    .testimonial-position {
+        font-size: 0.9rem;
+    }
+
+    .testimonial-text {
+        font-size: 0.9rem;
+    }
+
+    .testimonial-carousel-control-prev,
+    .testimonial-carousel-control-next {
+        width: 40px;
+        height: 40px;
+        margin-top: 140px;
+    }
+
+    .testimonial-carousel-control-prev-icon::after,
+    .testimonial-carousel-control-next-icon::after {
+        font-size: 1.2rem;
+    }
+
+    .testimonial-carousel-control-prev {
+        left: 10px;
+    }
+
+    .testimonial-carousel-control-next {
+        right: 10px;
+    }
+}
+
+/* Responsive Layout for 768px */
+@media (max-width: 768px) {
+    .testimonials-section {
+        padding: 30px 0;
+        height: 80vh;
+    }
+
+    .testimonial-card {
+        padding: 15px;
+        max-width: 400px;
+    }
+
+    .testimonial-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .testimonial-name {
+        font-size: 1.2rem;
+    }
+
+    .testimonial-position {
+        font-size: 0.8rem;
+    }
+
+    .testimonial-text {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .testimonial-carousel-control-prev,
+    .testimonial-carousel-control-next {
+        width: 35px;
+        height: 35px;
+        margin-top: 120px;
+    }
+
+    .testimonial-carousel-control-prev-icon::after,
+    .testimonial-carousel-control-next-icon::after {
+        font-size: 1rem;
+    }
+
+    .testimonial-carousel-control-prev {
+        left: 5px;
+    }
+
+    .testimonial-carousel-control-next {
+        right: 5px;
+    }
+}
+
+  footer {
+    background-color: #000;
+  }
+  
+  footer h5 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  footer a {
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #ffbc00;
+  }
+  
+/* Social Icons */
+.social-icons {
+    display: flex;
+}
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+.social-icon:hover {
+    color: #fff;
+}
+.social-icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -150%);
+}
+.social-icon:active {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+}
+.social-icon--linkedin {
+    background: #006599;
+    color: #fff;
+}
+.social-icon--linkedin .tooltip {
+    background: #006599;
+    color: currentColor;
+}
+.social-icon--linkedin .tooltip:after {
+    border-top-color: #006599;
+}
+.social-icon--twitter {
+    background: #2b97f1;
+    color: #fff;
+}
+.social-icon--twitter .tooltip {
+    background: #2b97f1;
+    color: currentColor;
+}
+.social-icon--twitter .tooltip:after {
+    border-top-color: #2b97f1;
+}
+.social-icon--codepen {
+    background: #000;
+    color: #fff;
+}
+.social-icon--codepen .tooltip {
+    background: #000;
+    color: currentColor;
+}
+.social-icon--codepen .tooltip:after {
+    border-top-color: #000;
+}
+.social-icon--facebook {
+    background: #3b5a9b;
+    color: #fff;
+}
+.social-icon--facebook .tooltip {
+    background: #3b5a9b;
+    color: currentColor;
+}
+.social-icon--facebook .tooltip:after {
+    border-top-color: #3b5a9b;
+}
+.social-icon--instagram {
+    background: #527fa6;
+    color: #fff;
+}
+.social-icon--instagram .tooltip {
+    background: #527fa6;
+    color: currentColor;
+}
+.social-icon--instagram .tooltip:after {
+    border-top-color: #527fa6;
+}
+.social-icon--dribbble {
+    background: #e94c45;
+    color: #fff;
+}
+.social-icon--dribbble .tooltip {
+    background: #e94c45;
+    color: currentColor;
+}
+.social-icon--dribbble .tooltip:after {
+    border-top-color: #e94c45;
+}
+.social-icon--github {
+    background: #4284c0;
+    color: #fff;
+}
+.social-icon--github .tooltip {
+    background: #4284c0;
+    color: currentColor;
+}
+.social-icon--github .tooltip:after {
+    border-top-color: #4284c0;
+}
+.social-icon i {
+    position: relative;
+    top: 1px;
+}
+/* Tooltips */
+.tooltip {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 0.8rem 1rem;
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    text-transform: uppercase;
+    transform: translate(-50%, -100%);
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+.tooltip:after {
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    content: "";
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    transform: translate(-50%, 100%);
+}
+
+/* Back to Top Button Styles */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffbc00;
+    color: #000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    z-index: 1000;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+
+  .back-to-top.show {
+    opacity: 1;
+  }
+
+  .back-to-top:hover {
+    background-color: #ffd740;
+  }
+
+/* For screen widths 1024px and below */
+@media screen and (max-width: 1024px) {
+    footer {
+        padding: 20px;
+    }
+
+    .font20{
+        font-size: 15px;
+    }
+
+    footer h5 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    footer a {
+        font-size: 0.9rem;
+    }
+
+    .social-icons {
+        justify-content: center; /* Align icons centrally */
+        flex-wrap: wrap;
+    }
+
+    .social-icon {
+        margin: 0.4rem; /* Reduce spacing */
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+
+    .tooltip {
+        font-size: 0.7rem; /* Adjust tooltip font size */
+        padding: 0.5rem 0.8rem;
+    }
+
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        bottom: 15px; /* Adjust positioning */
+        right: 15px;
+    }
+}
+
+/* For screen widths 768px and below */
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 15px;
+    }
+
+    footer h5 {
+        font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .font20{
+        font-size: 10px;
+    }
+
+    footer a {
+        font-size: 0.8rem;
+    }
+
+    .social-icons {
+        flex-wrap: wrap; /* Wrap icons into multiple rows if needed */
+        gap: 0.3rem;
+    }
+
+    .social-icon {
+        margin: 0.3rem;
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+
+    .tooltip {
+        font-size: 0.6rem; /* Further adjust tooltip font size */
+        padding: 0.4rem 0.6rem;
+    }
+
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+  /* Heading Styling */
+.kl-heading {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0068d2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.kl-heading::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 70px;
+    height: 6px;
+    transform: skew(-46deg) translateX(0%);
+    background: #FFBC00;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}

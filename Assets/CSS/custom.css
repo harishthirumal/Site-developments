@@ -1,0 +1,923 @@
+.font16{
+    font-size: 16px!important;
+}
+.font18{
+    font-size: 18px;
+}
+.font20{
+    font-size: 20px;
+}
+.font22{
+    font-size: 22px!important;
+}
+.font24{
+    font-size: 24px!important;
+}
+.font30{
+    font-size: 30px!important;
+}
+.font35{
+    font-size: 35px!important;
+}
+
+.font40{
+    font-size: 40px!important;
+}
+.font45{
+    font-size: 45px!important;
+}
+.font50{
+    font-size: 50px!important;
+}
+.font60{
+    font-size: 60px!important;
+}
+
+.font70{
+    font-size: 70px!important;
+}
+
+.font100{
+    font-size: 100px!important;
+}
+
+.font200{
+    font-weight: 200!important;
+}
+.font300{
+    font-weight: 300!important;
+}
+.font400{
+    font-weight: 400!important;
+}
+
+.font600{
+    font-weight: 600!important;
+}
+.font700{
+    font-weight: 700!important;
+}
+
+.font-5rem{
+    font-size: 5rem;
+}
+
+.clr-white{
+    color: #fff!important;
+}
+.clr-black{
+    color: #000 !important;
+}
+
+.pr-2rem{
+    padding-right: 2rem!important;
+}
+
+/* Section Styling */
+.freight-section {
+    padding: 20px 0px;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+/* Heading Styling */
+.kl-heading {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0068d2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.kl-heading::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 70px;
+    height: 6px;
+    transform: skew(-46deg) translateX(0%);
+    background: #FFBC00;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+/* Text Column Styling */
+.freight-text {
+    font-size: 15px;
+    color: #0068d2; /* Bootstrap primary blue */
+    line-height: 1.6;
+    text-align: justify;
+    font-family: "Roboto Condensed";
+}
+
+.freight-text-2 {
+    font-size: 20px;
+    color: #0068d2; /* Bootstrap primary blue */
+    line-height: 1.6;
+    text-align: justify;
+    font-family: "Roboto Condensed";
+}
+
+
+/* Image Column Styling */
+.freight-image img {
+    max-width: 512px;
+}
+
+/* Responsive Styles for 1024px */
+@media (max-width: 1024px) {
+    .freight-section {
+        padding: 15px 10px;
+    }
+
+    .kl-heading {
+        font-size: 1rem; /* Adjusted for smaller screens */
+    }
+
+    .kl-heading::after {
+        width: 40px; /* Reduced underline width */
+        height: 4px;
+    }
+
+    .freight-text {
+        font-size: 14px; /* Adjust font size for readability */
+        text-align: justify; /* Maintain alignment */
+        line-height: 1.5;
+    }
+
+    .freight-image img {
+        max-width: 400px; /* Scaled down image */
+        margin: 0 auto; /* Center align */
+        display: block;
+    }
+}
+
+/* Responsive Styles for 768px */
+@media (max-width: 768px) {
+    .freight-section {
+        padding: 10px 5px;
+    }
+
+    .kl-heading {
+        font-size: 0.8rem; /* Further adjusted font size */
+    }
+
+    .kl-heading::after {
+        width: 30px; /* Further reduced underline width */
+        height: 3px;
+    }
+
+    .freight-text {
+        font-size: 10px; /* Smaller font for smaller screens */
+        line-height: 1.4;
+        text-align: justify; /* Center align text for better UX */
+    }
+
+    .freight-image img {
+        max-width: 300px; /* Further scaled down */
+        margin: 0 auto; /* Center align */
+        display: block;
+    }
+}
+
+/* Our Values */
+/* Section Styling */
+.values-section {
+    background-color: #f2f2f2;
+    padding: 60px 20px;
+}
+
+/* Card Styling */
+.value-card {
+    background: #fff;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.value-card:hover .value-image {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+}
+
+/* Image Styling */
+.value-image {
+    max-width: 25%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Title Styling */
+.value-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0068d2;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/* Text Styling */
+.value-text {
+    font-size: 20px;
+    color: #0068d2;
+    line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+    /* Section Styling */
+    .values-section {
+        padding: 50px 15px; /* Adjust padding */
+    }
+
+    /* Card Styling */
+    .value-card {
+        padding: 15px; /* Reduce padding for smaller screens */
+        margin-bottom: 20px; /* Add spacing between cards */
+    }
+
+    /* Image Styling */
+    .value-image {
+        max-width: 35%; /* Increase image size */
+        margin-bottom: 10px;
+    }
+
+    /* Title Styling */
+    .value-title {
+        font-size: 1.3rem; /* Reduce title size */
+        margin-bottom: 8px;
+    }
+
+    /* Text Styling */
+    .value-text {
+        font-size: 18px; /* Reduce text size */
+        line-height: 1.4; /* Adjust line height */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Section Styling */
+    .values-section {
+        padding: 40px 10px; /* Reduce padding further */
+    }
+
+    /* Card Styling */
+    .value-card {
+        padding: 10px; /* Compact padding for mobile devices */
+        margin-bottom: 15px; /* Increase space between cards */
+        border-radius: 20px; /* Adjust card radius for smaller screens */
+    }
+
+    /* Image Styling */
+    .value-image {
+        max-width: 40%; /* Make images larger */
+        margin-bottom: 10px;
+    }
+
+    /* Title Styling */
+    .value-title {
+        font-size: 1.2rem; /* Reduce title font size further */
+        margin-bottom: 6px;
+    }
+
+    /* Text Styling */
+    .value-text {
+        font-size: 16px; /* Smaller text size for mobile */
+        line-height: 1.4;
+    }
+}
+
+/* End */
+
+.vision-section {
+    display: flex;
+  }
+  
+  .vision-col {
+    height: 400px; /* Set the height for both columns */
+    position: relative;
+  }
+  
+  .vision-col-1 {
+    background-image: url('../images/about/logistics-1.jpg'); /* Background for the first column */
+    
+    background-position: center;
+  }
+  
+  .vision-col-2 {
+    background-image: url('../images/about/logistics-2.jpg'); /* Background for the second column */
+    
+    background-position: center;
+  }
+  
+  .vision-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* White text color */
+    padding: 20px;
+    z-index: 2;
+    width: 100%;
+  }
+  
+  .vision-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFBC00;
+  }
+  
+  .vision-text {
+    font-size: 1.2rem;
+    margin: 0 auto;
+  }
+  
+  .vision-col::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0068d2; /* Overlay color */
+    opacity: 0.7; /* Adjust opacity to control the intensity of the overlay */
+    z-index: 1;
+  }
+  
+  .clr-theme-primary{
+    color: #0068d2 !important;
+  }
+
+  .teamwork-img{
+    width: 8%;
+  }
+
+  .quote-bg-section {
+    position: relative;
+    background-image: url('../images/homepage/Efficiency_in_motion.jpg');
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image */
+    height: 200px; /* Adjust height as needed */
+    z-index: 0;
+}
+
+.quote-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 17, 0.9); /* Semi-transparent dark overlay */
+    z-index: 1; /* Ensures the overlay is above the image */
+}
+
+.quote-content {
+    position: relative;
+    z-index: 2; /* Ensures content is above both the image and overlay */
+    text-align: center;
+    color: white;
+    top: 50%; /* Centers content vertically */
+    transform: translateY(-50%);
+}
+
+  #tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+
+  footer {
+    background-color: #000;
+  }
+  
+  footer h5 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  footer a {
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #ffbc00;
+  }
+  
+/* Social Icons */
+.social-icons {
+    display: flex;
+}
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+.social-icon:hover {
+    color: #fff;
+}
+.social-icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -150%);
+}
+.social-icon:active {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+}
+.social-icon--linkedin {
+    background: #006599;
+    color: #fff;
+}
+.social-icon--linkedin .tooltip {
+    background: #006599;
+    color: currentColor;
+}
+.social-icon--linkedin .tooltip:after {
+    border-top-color: #006599;
+}
+.social-icon--twitter {
+    background: #2b97f1;
+    color: #fff;
+}
+.social-icon--twitter .tooltip {
+    background: #2b97f1;
+    color: currentColor;
+}
+.social-icon--twitter .tooltip:after {
+    border-top-color: #2b97f1;
+}
+.social-icon--codepen {
+    background: #000;
+    color: #fff;
+}
+.social-icon--codepen .tooltip {
+    background: #000;
+    color: currentColor;
+}
+.social-icon--codepen .tooltip:after {
+    border-top-color: #000;
+}
+.social-icon--facebook {
+    background: #3b5a9b;
+    color: #fff;
+}
+.social-icon--facebook .tooltip {
+    background: #3b5a9b;
+    color: currentColor;
+}
+.social-icon--facebook .tooltip:after {
+    border-top-color: #3b5a9b;
+}
+.social-icon--instagram {
+    background: #527fa6;
+    color: #fff;
+}
+.social-icon--instagram .tooltip {
+    background: #527fa6;
+    color: currentColor;
+}
+.social-icon--instagram .tooltip:after {
+    border-top-color: #527fa6;
+}
+.social-icon--dribbble {
+    background: #e94c45;
+    color: #fff;
+}
+.social-icon--dribbble .tooltip {
+    background: #e94c45;
+    color: currentColor;
+}
+.social-icon--dribbble .tooltip:after {
+    border-top-color: #e94c45;
+}
+.social-icon--github {
+    background: #4284c0;
+    color: #fff;
+}
+.social-icon--github .tooltip {
+    background: #4284c0;
+    color: currentColor;
+}
+.social-icon--github .tooltip:after {
+    border-top-color: #4284c0;
+}
+.social-icon i {
+    position: relative;
+    top: 1px;
+}
+/* Tooltips */
+.tooltip {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 0.8rem 1rem;
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    text-transform: uppercase;
+    transform: translate(-50%, -100%);
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+.tooltip:after {
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    content: "";
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    transform: translate(-50%, 100%);
+}
+  
+
+.get-quote{
+    color: #0068d2 !important;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .get-quote{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .get-quote{
+        font-size: 15px;
+    }
+}
+
+/* For screen widths 1024px and below */
+@media screen and (max-width: 1024px) {
+    footer {
+        padding: 20px;
+    }
+
+    .font20{
+        font-size: 15px;
+    }
+
+    footer h5 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    footer a {
+        font-size: 0.9rem;
+    }
+
+    .social-icons {
+        justify-content: center; /* Align icons centrally */
+        flex-wrap: wrap;
+    }
+
+    .social-icon {
+        margin: 0.4rem; /* Reduce spacing */
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+
+    .tooltip {
+        font-size: 0.7rem; /* Adjust tooltip font size */
+        padding: 0.5rem 0.8rem;
+    }
+
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        bottom: 15px; /* Adjust positioning */
+        right: 15px;
+    }
+}
+
+/* For screen widths 768px and below */
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 15px;
+    }
+
+    footer h5 {
+        font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .font20{
+        font-size: 10px;
+    }
+
+    footer a {
+        font-size: 0.8rem;
+    }
+
+    .social-icons {
+        flex-wrap: wrap; /* Wrap icons into multiple rows if needed */
+        gap: 0.3rem;
+    }
+
+    .social-icon {
+        margin: 0.3rem;
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+
+    .tooltip {
+        font-size: 0.6rem; /* Further adjust tooltip font size */
+        padding: 0.4rem 0.6rem;
+    }
+
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+/* Services */
+.service-img{
+    width: 20%;
+}
+.service-section {
+    padding: 0px 0px;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.service-details-img{
+    width: 100%;
+    height: 400px;
+}
+
+.service-details-bg-1 {
+    background-image: url('../images/services/s1.jpg'); /* Replace with your actual image path */
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.service-details-bg-2 {
+    background-image: url('../images/services/s2.jpg'); /* Replace with your actual image path */
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.service-details-bg-3 {
+    background-image: url('../images/services/s3.jpg'); /* Replace with your actual image path */
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.service-details-bg-4 {
+    background-image: url('../images/services/s4.jpg'); /* Replace with your actual image path */
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.service-details-bg-1, 
+.service-details-bg-2, 
+.service-details-bg-3, 
+.service-details-bg-4 {
+    height: 371px; /* Adjust background height for smaller screens */
+    width: 632px;
+    background-size: cover; /* Ensure image scaling */
+}
+
+/* Responsive for 1024px */
+@media (max-width: 1024px) {
+    .service-img {
+        width: 15%; /* Adjust image size */
+        height: 50%;
+    }
+    .service-details-img {
+        height: 300px; /* Reduce height for images */
+    }
+    .service-details-bg-1, 
+    .service-details-bg-2, 
+    .service-details-bg-3, 
+    .service-details-bg-4 {
+        height: 337px; /* Adjust height for backgrounds */
+        width: 491px;
+         /* Ensure images fit well */
+    }
+    .service-section {
+        padding: 20px; /* Add padding for better spacing */
+    }
+}
+
+/* Responsive for 768px */
+@media (max-width: 768px) {
+    .service-img {
+        width: 15%; /* Further reduce image size */
+        height: 50%;
+    }
+    .service-details-img {
+        height: 250px; /* Further reduce height for smaller screens */
+    }
+    .service-details-bg-1, 
+    .service-details-bg-2, 
+    .service-details-bg-3, 
+    .service-details-bg-4 {
+        height: 264px; /* Adjust background height for smaller screens */
+        width: 373px;
+         /* Ensure image scaling */
+    }
+    .service-section {
+        padding: 10px; /* Compact spacing */
+    }
+}
+
+/* Masonry Grid Styles */
+.masonry-grid {
+display: flex;
+flex-wrap: wrap;
+margin: 20px auto;
+width: 90%;
+max-width: 1200px;
+}
+
+.grid-item {
+flex-basis: calc(33.333% - 10px);
+margin: 5px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+cursor: pointer;
+}
+
+.grid-item img {
+width: 360px;
+height: auto;
+display: block;
+border-radius: 5px;
+}
+
+/* Lightbox Viewer */
+#lightbox {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.9);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+visibility: hidden;
+opacity: 0;
+transition: visibility 0s, opacity 0.3s ease;
+}
+
+#lightbox.active {
+visibility: visible;
+opacity: 1;
+}
+
+#lightbox img {
+max-width: 80%;
+max-height: 80%;
+border-radius: 5px;
+}
+
+.lightbox-toolbar.left {
+position: absolute;
+top: 20px;
+left: 20px;
+color: white;
+}
+
+.lightbox-toolbar.right {
+position: absolute;
+top: 20px;
+right: 20px;
+display: flex;
+gap: 10px;
+}
+
+.lightbox-toolbar .fa {
+font-size: 1.5em;
+color: white;
+cursor: pointer;
+padding: 5px;
+border-radius: 50%;
+transition: all 0.3s;
+}
+
+.lightbox-toolbar .fa:hover {
+background: white;
+color: black;
+}
+
+#prev-btn, #next-btn {
+position: absolute;
+top: 50%;
+font-size: 2em;
+color: white;
+background-color: black;
+cursor: pointer;
+transform: translateY(-50%);
+transition: color 0.3s;
+}
+
+#prev-btn {
+left: 20px;
+}
+
+#next-btn {
+right: 20px;
+}
+
+#prev-btn:hover, #next-btn:hover {
+color: black;
+background-color: #f4f4f4;
+}
+
+/* Responsive Masonry Grid Styles */
+
+/* For screens 1024px and smaller */
+@media (max-width: 1024px) {
+    .masonry-grid {
+        width: 90%; /* Adjust the grid container width */
+    }
+
+    .grid-item {
+        width: 290px;
+    }
+
+    .grid-item img {
+        width: 100%; /* Make images fit within their container */
+    }
+}
+
+/* For screens 768px and smaller */
+@media (max-width: 768px) {
+    .masonry-grid {
+        width: 80%; /* Adjust the grid container width */
+        margin: 10px auto; /* Reduce margins */
+    }
+
+    .grid-item {
+        width: 185px;
+    }
+
+    .grid-item img {
+        width: 100%; /* Make images fit within their container */
+    }
+}
+
+/* Lightbox Responsiveness */
+@media (max-width: 1024px) {
+    #lightbox img {
+        max-width: 90%; /* Allow larger images on smaller screens */
+        max-height: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    #lightbox img {
+        max-width: 95%; /* Allow images to take up more space on mobile */
+        max-height: 60%;
+    }
+    
+    #prev-btn, #next-btn {
+        font-size: 1.5em; /* Adjust button size */
+    }
+
+    .lightbox-toolbar .fa {
+        font-size: 1.2em; /* Adjust toolbar icon size */
+    }
+}
+
+    
