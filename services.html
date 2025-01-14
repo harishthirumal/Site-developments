@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Assets/CSS/custom.css">
+
+   <!-- tsParticles CDN -->
+   <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.0/tsparticles.bundle.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+  <style>
+    /* Header styling */
+    .header {
+      background-image: url(./Assets/images/services/header-bg.jpg);
+      background-size: cover;
+      background-position: center 45%;
+      color: #fff;
+      padding-top: 1%;
+      padding-bottom: 12%;
+      position: relative;
+  }
+
+
+    /* Background overlay */
+    .header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+      z-index: 1;
+    }
+
+    .header .container {
+      position: relative;
+      z-index: 2; /* To place content above the overlay */
+    }
+
+    .header .navbar-brand img {
+      max-height: 100px;
+    }
+
+    .header .navbar-nav {
+      flex-direction: row;
+    }
+
+    .header .nav-item {
+      margin: 0 10px;
+    }
+
+    .header .nav-link {
+      color: white !important;
+      font-weight: bold;
+    }
+
+    .header .contact-us-btn {
+      background-color: #ffbc00;
+      color: #000;
+      border-radius: 20px;
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+
+    .about-content {
+      padding: 40px 20px;
+    }
+
+    .about-head{
+        color: #ffbc00;
+        z-index: 3; 
+        position: relative;
+        font-size: 36px;
+        font-family: "Roboto Condensed";
+    }
+
+    .contact-us-btn, .contact-us-btn:hover {
+      background-color: #ffbc00;
+      color: #000;
+      border-radius: 20px;
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+
+    /* Responsive Styles for 1024px */
+    @media (max-width: 1024px) {
+        .header {
+            background-position: center 30%; /* Adjust background position for better focus */
+            padding-top: 2%; /* Increased padding for more spacing */
+            padding-bottom: 6%; /* Adjusted padding to maintain balance */
+        }
+
+        .header .navbar-brand img {
+            max-height: 80px; /* Scale logo appropriately */
+        }
+
+        .header .nav-item {
+            margin: 0 8px; /* Reduce spacing between nav items */
+        }
+
+        .header .nav-link {
+            font-size: 14px; /* Reduce font size for nav links */
+        }
+
+        .header .contact-us-btn {
+            font-size: 12px; /* Adjust font size for smaller screens */
+            padding: 8px 16px; /* Adjust button padding */
+        }
+
+        .about-content {
+            padding: 30px 15px; /* Reduce padding for the content */
+        }
+
+        .about-head {
+            font-size: 28px; /* Reduce font size for heading */
+        }
+    }
+
+    @media (max-width: 768px) {
+        .header {
+            background-position: center 40%; /* Adjust background position for better visibility */
+            background-size: cover; /* Ensure the background image covers the entire section */
+            padding-top: 5%; /* Add more padding to ensure content is visible */
+            padding-bottom: 8%; /* Add padding to balance the layout */
+            position: relative; /* Ensure proper stacking with z-index */
+            z-index: 0;
+        }
+
+        .header .navbar {
+            flex-direction: column; /* Stack items vertically */
+            align-items: center;
+        }
+
+        .header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Ensure overlay does not hide content */
+            z-index: 1; /* Keep overlay below the content */
+        }
+
+        .header .container {
+            position: relative;
+            z-index: 2; /* Ensure container content is above the overlay */
+        }
+
+        .header .navbar-brand img {
+            max-height: 60px; /* Reduce logo size for smaller screens */
+        }
+
+        .header .navbar-nav {
+            flex-direction: column; /* Stack navigation items vertically */
+            text-align: center; /* Center-align navigation items */
+        }
+
+        .header .nav-item {
+            margin: 5px 0; /* Add vertical spacing between nav items */
+        }
+
+        .header .nav-link {
+            font-size: 14px; /* Reduce font size for navigation links */
+            color: white !important; /* Ensure text is visible on dark background */
+        }
+
+        .header .contact-us-btn {
+            font-size: 12px; /* Adjust button font size for smaller screens */
+            padding: 8px 16px; /* Adjust button padding */
+            border-radius: 20px; /* Maintain rounded button design */
+            background-color: #ffbc00; /* Ensure button is visible */
+            color: #000;
+        }
+
+        .about-content {
+            padding: 30px 15px; /* Reduce content padding for better fit */
+        }
+
+        .about-head {
+            font-size: 24px; /* Reduce font size for heading */
+            color: #ffbc00;
+        }
+
+        .navbar-toggler-icon{
+          background-color: #ffbc00;
+        }
+    }
+
+    /* Back to Top Button Styles */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #ffbc00;
+      color: #000;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      z-index: 1000;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .back-to-top.show {
+      opacity: 1;
+    }
+
+    .back-to-top:hover {
+      background-color: #ffd740;
+    }
+
+    /* Responsive Styles for 1024px */
+    @media (max-width: 1024px) {
+            .header {
+                background-position: center 30%; /* Adjust background position for better focus */
+                padding-top: 2%; /* Increased padding for more spacing */
+                padding-bottom: 6%; /* Adjusted padding to maintain balance */
+            }
+
+            .header .navbar-brand img {
+                max-height: 80px; /* Scale logo appropriately */
+            }
+
+            .header .nav-item {
+                margin: 0 8px; /* Reduce spacing between nav items */
+            }
+
+            .header .nav-link {
+                font-size: 14px; /* Reduce font size for nav links */
+            }
+
+            .header .contact-us-btn {
+                font-size: 12px; /* Adjust font size for smaller screens */
+                padding: 8px 16px; /* Adjust button padding */
+            }
+
+            .about-content {
+                padding: 30px 15px; /* Reduce padding for the content */
+            }
+
+            .about-head {
+                font-size: 28px; /* Reduce font size for heading */
+            }
+
+            .contact-us-btn, .contact-us-btn:hover {
+                background-color: #ffbc00; /* Keep background consistent */
+                color: #000; /* Keep text color consistent */
+                border-radius: 20px; /* Maintain rounded corners */
+                padding: 8px 18px; /* Slightly reduce padding */
+                font-size: 13px; /* Reduce font size for better fit */
+            }           
+        }
+
+        @media (max-width: 768px) {
+        .header {
+            background-position: center 40%; /* Adjust background position for better visibility */
+            background-size: cover; /* Ensure the background image covers the entire section */
+            padding-top: 5%; /* Add more padding to ensure content is visible */
+            padding-bottom: 8%; /* Add padding to balance the layout */
+            position: relative; /* Ensure proper stacking with z-index */
+            z-index: 0;
+        }
+
+        .header .navbar {
+            flex-direction: column; /* Stack items vertically */
+            align-items: center;
+        }
+
+        .header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Ensure overlay does not hide content */
+            z-index: 1; /* Keep overlay below the content */
+        }
+
+        .header .container {
+            position: relative;
+            z-index: 2; /* Ensure container content is above the overlay */
+        }
+
+        .header .navbar-brand img {
+            max-height: 60px; /* Reduce logo size for smaller screens */
+        }
+
+        .header .navbar-nav {
+            flex-direction: column; /* Stack navigation items vertically */
+            text-align: center; /* Center-align navigation items */
+        }
+
+        .header .nav-item {
+            margin: 5px 0; /* Add vertical spacing between nav items */
+        }
+
+        .header .nav-link {
+            font-size: 14px; /* Reduce font size for navigation links */
+            color: white !important; /* Ensure text is visible on dark background */
+        }
+
+        .header .contact-us-btn {
+            font-size: 12px; /* Adjust button font size for smaller screens */
+            padding: 8px 16px; /* Adjust button padding */
+            border-radius: 20px; /* Maintain rounded button design */
+            background-color: #ffbc00; /* Ensure button is visible */
+            color: #000;
+        }
+
+        .about-content {
+            padding: 30px 15px; /* Reduce content padding for better fit */
+        }
+
+        .about-head {
+            font-size: 24px; /* Reduce font size for heading */
+            color: #ffbc00;
+        }
+
+        .navbar-toggler-icon{
+          background-color: #ffbc00;
+        }
+        
+        .contact-us-btn, .contact-us-btn:hover {
+            background-color: #ffbc00; /* Keep background consistent */
+            color: #000; /* Maintain text color */
+            border-radius: 15px; /* Adjust border radius for smaller screens */
+            padding: 6px 15px; /* Further reduce padding */
+            font-size: 12px; /* Reduce font size for mobile */
+            width: auto; /* Ensure the button does not shrink too much */
+            text-align: center; /* Center-align text */
+        }
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <!-- Header Section -->
+<header class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="./Assets/images/logo.png" alt="Logo">
+        </a>
+  
+        <!-- Centered Menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link font400" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font400" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font400" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font400" href="gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Contact Us Button -->
+        <div class="d-none d-lg-block">
+          <a href="contact.html" class="btn contact-us-btn">CONTACT US</a>
+        </div>
+      </div>
+    </nav>
+  
+    <!-- Center-Aligned "About Us" Text -->
+    <div class="text-center pt-3">
+        <h2 class="about-head">Services</h2>
+      </div>
+      
+  </header>
+  
+  <section class="service-section">
+    <!-- Content Row -->
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <!-- Text Column -->
+        <div id="air-freight" class="col-6">
+          <div class="text-center">
+            <img src="./Assets/images/services/1.svg" alt="" class="service-img">
+            <h2 class="kl-heading pt-4">AIR FREIGHT</h2>
+          </div>
+          <p class="freight-text font18 px-5">
+            We are the leading Air Freight provider that provides a full range of air import and air export logistics solutions. Our global team is highly experienced in Air Freight Logistics. We understand how critical timing is when utilizing air freight services. Every step in the process of handling an air freight shipment is handled with great care and a sense of urgency. From cargo measurements to scheduling route times and customs clearance, our team provides expert guidance and instant communication so our customers can expand their global footprint.
+          </p>
+        </div>
+        <!-- Image Column -->
+        <div class="col-6">
+          <div class="service-details-bg-1">
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <!-- Image Column -->
+        <div class="col-6">
+          <div class="service-details-bg-2">
+          </div>
+        </div>
+        <!-- Text Column -->
+        <div id="sea-freight" class="col-6">
+          <div class="text-center">
+            <img src="./Assets/images/services/2.svg" alt="" class="service-img">
+            <h2 class="kl-heading pt-4">SEA FREIGHT</h2>
+          </div>
+          <p class="freight-text font18 px-5">
+            Our ocean freight services encompass leading shipping lines from across the globe. We can deliver to every major container port globally with utmost reliability. We offer both Full Container Load (FCL) & Less than Container Load (LCL) services for major ports across the world, including to interior ICD’s and hinterlands with special arrangement with shipping lines and our partner network. Thanks to our experience and long-standing relationships, we are able to offer competitive sea freight services with priority loading on vessels for our customers.
+          </p>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <!-- Text Column -->
+        <div id="road-freight" class="col-6">
+          <div class="text-center">
+            <img src="./Assets/images/services/3.svg" alt="" class="service-img">
+            <h2 class="kl-heading pt-4">ROAD FREIGHT</h2>
+          </div>
+          <p class="freight-text font18 px-5">
+            We are the leading Air Freight provider that provides a full range of air import and air export logistics solutions. Our global team is highly experienced in Air Freight Logistics. We understand how critical timing is when utilizing air freight services. Every step in the process of handling an air freight shipment is handled with great care and a sense of urgency. From cargo measurements to scheduling route times and customs clearance, our team provides expert guidance and instant communication so our customers can expand their global footprint.
+          </p>
+        </div>
+        <!-- Image Column -->
+        <div class="col-6">
+          <div class="service-details-bg-3">
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <!-- Image Column -->
+        <div class="col-6">
+          <div class="service-details-bg-4">
+          </div>
+        </div>
+        <!-- Text Column -->
+        <div class="col-6">
+          <div class="text-center">
+            <img src="./Assets/images/services/4.svg" alt="" class="service-img">
+            <h2 class="kl-heading pt-4">CUSTOM CLEARANCE</h2>
+          </div>
+          <p class="freight-text font18 px-5">
+            We are the leading Air Freight provider that provides a full range of air import and air export logistics solutions. Our global team is highly experienced in Air Freight Logistics. We understand how critical timing is when utilizing air freight services. Every step in the process of handling an air freight shipment is handled with great care and a sense of urgency. From cargo measurements to scheduling route times and customs clearance, our team provides expert guidance and instant communication so our customers can expand their global footprint.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="quote-bg-section">
+    <div id="tsparticles"></div>
+    <div class="quote-bg-overlay"></div>
+    <div class="quote-content">
+      <h1 class="get-quote">GET A QUOTE</h1>
+      <a href="contact.html"><button class="btn contact-us-btn mt-3">Contact Us</button></a>
+    </div>
+  </section>
+  
+  <footer class="bg-black text-white py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Address Section -->
+        <div class="col-12 col-md-4">
+          <h5>Address</h5>
+          <p class="font20">
+            Kingdom Logistics<br>
+            Office No 1131, 11th Floor,<br>
+            IBN Battuta Gate Office Building,<br>
+            Sheikh Zayed Road, Dubai,<br>
+            United Arab Emirates
+          </p>
+        </div>
+  
+        <!-- Contact Section -->
+        <div class="col-12 col-md-4">
+          <h5>Contact</h5>
+          <p class="font20">
+            <i class="fa fa-envelope"></i> <a href="mailto:cs@kingdomlogistics.me" class="text-white">cs@kingdomlogistics.me</a><br>
+            <i class="fa fa-phone"></i> <a href="tel:+971554490965" class="text-white">+971 55 449 0965</a>
+          </p>
+        </div>
+  
+        <!-- Social Media Section -->
+        <div class="col-12 col-md-4">
+          <h5>Connect</h5>
+          <div class="social-icons">
+            <a class="social-icon social-icon--facebook">
+              <i class="fa fa-facebook"></i>
+              <div class="tooltip">Facebook</div>
+            </a>
+            <a class="social-icon social-icon--twitter">
+              <i class="fa fa-twitter"></i>
+              <div class="tooltip">Twitter</div>
+            </a>
+            <a class="social-icon social-icon--instagram">
+              <i class="fa fa-instagram"></i>
+              <div class="tooltip">Instagram</div>
+            </a>
+            <a class="social-icon social-icon--dribbble">
+              <i class="fa fa-youtube-play"></i>
+              <div class="tooltip">Youtube</div>
+            </a>
+            <a class="social-icon social-icon--linkedin">
+              <i class="fa fa-linkedin"></i>
+              <div class="tooltip">LinkedIn</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+   <!-- Back to Top Button -->
+   <a href="#" class="back-to-top" id="backToTop">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Back to Top Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const backToTopButton = document.getElementById('backToTop');
+
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.add('show');
+        } else {
+          backToTopButton.classList.remove('show');
+        }
+      });
+
+      backToTopButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+   <!-- tsParticles Initialization Script -->
+   <script>
+    tsParticles.load("tsparticles", {
+      fullScreen: { enable: false },
+      fpsLimit: 120,
+      particles: {
+        number: {
+          value: 80,
+          density: {
+            enable: true,
+            area: 800
+          }
+        },
+        color: {
+          value: "#00ff00",
+          animation: {
+            enable: true,
+            speed: 80,
+            sync: true
+          }
+        },
+        shape: {
+          type: ["circle", "square", "triangle", "polygon", "star"],
+          options: {
+            polygon: { nb_sides: 5 }
+          }
+        },
+        opacity: { value: 0.5 },
+        size: { value: { min: 1, max: 5 } },
+        links: {
+          enable: true,
+          distance: 100,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          outModes: { default: "out" }
+        }
+      },
+      interactivity: {
+        events: {
+          onHover: { enable: true, mode: "repulse" },
+          onClick: { enable: true, mode: "push" },
+          resize: true
+        },
+        modes: {
+          repulse: { distance: 200 },
+          push: { quantity: 4 }
+        }
+      },
+      detectRetina: true
+    });
+  </script>
+</body>
+</html>

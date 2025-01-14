@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom Logistics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/CSS/styles.css">
+    <!-- tsParticles CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.0/tsparticles.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!-- jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container justify-content-between">
+                <a class="navbar-brand" href="index.html"><img src="Assets/images/logo.png" alt="KL Logo" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link font400" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link font400" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link font400" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link font400" href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <a href="contact.html" class="btn btn-warning text-dark contact-btn">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-slide="yellow">
+                <img src="Assets/images/homepage/navigating_logistics.jpg" class="d-block w-100" alt="Ship at Sea">
+                <div class="carousel-caption">
+                    <h1 class="title-slide">NAVIGATING GLOBAL LOGISTICS</h1>
+                    <p class="subtitle-slide">Seamlessly connecting continents, one shipment at a time.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-slide="blue">
+                <img src="Assets/images/homepage/Efficiency_in_motion.jpg" class="d-block w-100" alt="Shipping Containers">
+                <div class="carousel-caption">
+                    <h1 class="title-slide">EFFICIENCY IN MOTION</h1>
+                    <p class="subtitle-slide">Delivering your success through reliable shipping solutions worldwide.</p>
+                </div>
+            </div>
+        </div>
+        <div class="line-indicator">
+            <span class="yellow-line"></span>
+            <span class="blue-line"></span>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Section 2: About Kingdom Logistics -->
+    <section id="about" class="about-section">
+        <div class="container text-center">
+            <!-- Heading -->
+            <h2 class="kl-heading">
+                ABOUT KINGDOM LOGISTICS
+            </h2>
+            <div class="row align-items-center mt-4">
+                <!-- Lottie Animation -->
+                <div class="col-md-6 text-center">
+                    <lottie-player 
+                        src="./truck.json"  
+                        background="transparent"  
+                        speed="1" 
+                        loop 
+                        autoplay 
+                        style="width: 350px; height: auto;">
+                    </lottie-player>
+
+                </div>
+                <!-- Description -->
+                <div class="col-md-6 text-start">
+                    <p class="about-text">
+                        Kingdom Logistics, where we redefine excellence in the realm of shipping and logistics. Our journey began with a vision to build a logistics kingdom that seamlessly connects businesses to the world. Established with a commitment to reliability, efficiency, and customer satisfaction, Kingdom Logistics has emerged as a trusted partner for global supply chain solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: What We Do -->
+    <section id="what-we-do" class="what-we-do-section">
+        <div class="container text-center">
+            <!-- Section Title -->
+            <h2 class="kl-heading">
+                WHAT WE DO
+            </h2>
+            <div class="row mt-5">
+                <!-- Air Freight Card -->
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="Assets/images/homepage/air_freight.svg" alt="Air Freight" class="service-icon">
+                        <br>
+                        <a href="services.html#air-freight" class="service-title">Air Freight</a>
+                    </div>
+                </div>
+                <!-- Ocean Freight Card -->
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="Assets/images/homepage/ocean_freight.svg" alt="Ocean Freight" class="service-icon">
+                        <br>
+                        <a href="services.html#sea-freight" class="service-title">Ocean Freight</a>
+                    </div>
+                </div>
+                <!-- Road Freight Card -->
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="Assets/images/homepage/road_freight.svg" alt="Road Freight" class="service-icon">
+                        <br>
+                        <a href="services.html#road-freight" class="service-title">Road Freight</a>
+                    </div>
+                </div>
+            </div>
+            <!-- View Our Services Button -->
+            <div class="mt-4">
+                <a href="services.html" class="btn view-services-btn">View Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us-section" id="why-choose-us">
+        <div class="container">
+            <!-- Title -->
+            <div class="row justify-content-center text-center">
+                <div class="col-md-8">
+                    <h2 class="kl-heading">WHY CHOOSE US?</h2>
+                </div>
+            </div>
+            <div class="row align-items-center mt-5">
+                <!-- Lottie Animation -->
+                <div class="col-md-6">
+                    <lottie-player 
+                        src="./pack.json"  
+                        background="transparent"  
+                        speed="1" 
+                        loop 
+                        autoplay 
+                        style="width: 350px; height: auto;">
+                    </lottie-player>
+                </div>
+                <!-- List with Checkboxes -->
+                <!-- List with Checkboxes -->
+                <div class="col-md-6">
+                    <ul class="why-choose-us-list">
+                        <li>
+                            <img src="Assets/images/homepage/tick-square.svg" alt="Tick Icon" class="check-icon" /> FUTURE-READY LOGISTICS SOLUTIONS
+                        </li>
+                        <br>
+                        <li>
+                            <img src="Assets/images/homepage/tick-square.svg" alt="Tick Icon" class="check-icon" /> TRUSTED PARTNERS IN TRANSPORTATION
+                        </li>
+                        <br>
+                        <li>
+                            <img src="Assets/images/homepage/tick-square.svg" alt="Tick Icon" class="check-icon" /> CUSTOMIZED LOGISTICS FOR YOUR SUCCESS
+                        </li>
+                        <br>
+                        <li>
+                            <img src="Assets/images/homepage/tick-square.svg" alt="Tick Icon" class="check-icon" /> COMMITTED TO CUSTOMER SATISFACTION
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>   
+    
+    <section class="quote-bg-section">
+        <div id="tsparticles"></div>
+        <div class="quote-bg-overlay"></div>
+        <div class="quote-content">
+          <h1 class="get-quote">GET A QUOTE</h1>
+          <a href="contact.html"><button class="btn contact-btn mt-3">Contact Us</button></a>
+        </div>
+      </section>
+      
+      <section id="testimonials" class="testimonials-section">
+        <div class="container text-center">
+            <!-- Section Title -->
+            <h2 class="kl-heading">
+                TESTIMONIALS
+            </h2>
+    
+            <!-- Testimonials Carousel -->
+            <div id="testimonialsCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+                <!-- Carousel Inner -->
+                <div class="testimonial-carousel-inner">
+                    <!-- First Testimonial -->
+                    <div class="carousel-item active">
+                        <div class="testimonial-card">
+                            <img src="Assets/images/homepage/navigating_logistics.jpg" alt="Testimonial 1" class="testimonial-image">
+                            <h4 class="testimonial-name">John Doe</h4>
+                            <p class="testimonial-position">CEO – GlobalTech Solutions</p>
+                            <p class="testimonial-text">
+                                “Kingdom Logistics has been an invaluable partner in our journey to streamline our international supply chain. Their commitment to reliability and attention to detail is unmatched.”
+                            </p>
+                        </div>
+                    </div>
+    
+                    <!-- Second Testimonial -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <img src="Assets/images/homepage/navigating_logistics.jpg" alt="Testimonial 2" class="testimonial-image">
+                            <h4 class="testimonial-name">Emily Turner</h4>
+                            <p class="testimonial-position">Procurement Manager – AquaFresh Beverages</p>
+                            <p class="testimonial-text">
+                                “We've been working with Kingdom Logistics for years, and their dedication to customer satisfaction is impressive. Their flexibility and problem-solving have been crucial to our growth.”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Carousel Controls -->
+                <button class="testimonial-carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+                    <span class="testimonial-carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="testimonial-carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+                    <span class="testimonial-carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+      </section>    
+
+      <footer class="bg-black text-white py-4">
+        <div class="container">
+          <div class="row">
+            <!-- Address Section -->
+            <div class="col-12 col-md-4">
+              <h5>Address</h5>
+              <p class="font20">
+                Kingdom Logistics<br>
+                Office No 1131, 11th Floor,<br>
+                IBN Battuta Gate Office Building,<br>
+                Sheikh Zayed Road, Dubai,<br>
+                United Arab Emirates
+              </p>
+            </div>
+      
+            <!-- Contact Section -->
+            <div class="col-12 col-md-4">
+              <h5>Contact</h5>
+              <p class="font20">
+                <i class="fa fa-envelope"></i> <a href="mailto:cs@kingdomlogistics.me" class="text-white">cs@kingdomlogistics.me</a><br>
+                <i class="fa fa-phone"></i> <a href="tel:+971554490965" class="text-white">+971 55 449 0965</a>
+              </p>
+            </div>
+      
+            <!-- Social Media Section -->
+            <div class="col-12 col-md-4">
+              <h5>Connect</h5>
+              <div class="social-icons">
+                <a class="social-icon social-icon--facebook">
+                  <i class="fa fa-facebook"></i>
+                  <div class="tooltip">Facebook</div>
+                </a>
+                <a class="social-icon social-icon--twitter">
+                  <i class="fa fa-twitter"></i>
+                  <div class="tooltip">Twitter</div>
+                </a>
+                <a class="social-icon social-icon--instagram">
+                  <i class="fa fa-instagram"></i>
+                  <div class="tooltip">Instagram</div>
+                </a>
+                <a class="social-icon social-icon--dribbble">
+                  <i class="fa fa-youtube-play"></i>
+                  <div class="tooltip">Youtube</div>
+                </a>
+                <a class="social-icon social-icon--linkedin">
+                  <i class="fa fa-linkedin"></i>
+                  <div class="tooltip">LinkedIn</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+       <!-- Back to Top Button -->
+       <a href="#" class="back-to-top" id="backToTop">
+        <i class="fa fa-chevron-up"></i>
+       </a>
+
+       <script>
+        $(document).ready(function () {
+            lottie.loadAnimation({
+                container: document.getElementById('lottie-animation'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: '/Assets/Lottie/truck.json',
+            }).addEventListener('data_failed', function () {
+                console.error('Failed to load Lottie JSON file.');
+            });
+        });
+    </script>
+       <!-- Back to Top Script -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const backToTopButton = document.getElementById('backToTop');
+
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+                } else {
+                backToTopButton.classList.remove('show');
+                }
+            });
+
+            backToTopButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+                });
+            });
+            });
+        </script>
+        
+        <!-- Initialize tsParticles -->
+        <script>
+            tsParticles.load("tsparticles", {
+            fullScreen: { enable: false },
+            fpsLimit: 120,
+            particles: {
+                number: {
+                value: 80,
+                density: {
+                    enable: true,
+                    area: 800
+                }
+                },
+                color: {
+                value: "#00ff00",
+                animation: {
+                    enable: true,
+                    speed: 80,
+                    sync: true
+                }
+                },
+                shape: {
+                type: ["circle", "square", "triangle", "polygon", "star"],
+                options: {
+                    polygon: { nb_sides: 5 }
+                }
+                },
+                opacity: { value: 0.5 },
+                size: { value: { min: 1, max: 5 } },
+                links: {
+                enable: true,
+                distance: 100,
+                color: "#ffffff",
+                opacity: 0.4,
+                width: 1
+                },
+                move: {
+                enable: true,
+                speed: 2,
+                outModes: { default: "out" }
+                }
+            },
+            interactivity: {
+                events: {
+                onHover: { enable: true, mode: "repulse" },
+                onClick: { enable: true, mode: "push" },
+                resize: true
+                },
+                modes: {
+                repulse: { distance: 200 },
+                push: { quantity: 4 }
+                }
+            },
+            detectRetina: true
+            });
+        </script>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Assets/JS/home.js"></script>
+</body>
+
+</html>
